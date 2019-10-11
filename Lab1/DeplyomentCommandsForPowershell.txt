@@ -1,0 +1,4 @@
+
+New-AzResourceGroup -Name firstResourceGroup -Location westeurope
+
+New-AzResourceGroupDeployment -Location "West Europe" -TemplateFile ".\azuredeploy.json" -TemplateParameterFile ".\azuredeploy.parameters.json" -ResourceGroupName "firstResourceGroup"
