@@ -1,0 +1,18 @@
+az login
+
+kubectl create secret generic mysql-pass --from-literal=password=PASSWORD
+
+kubectl apply -f .\mysql-deployment.yaml
+
+
+
+kubectl apply -f .\wordpress-deployment.yaml
+
+IP Adresse herausfinden mit:
+
+kubectl get services
+
+IP: http://51.105.194.35/
+
+
+
